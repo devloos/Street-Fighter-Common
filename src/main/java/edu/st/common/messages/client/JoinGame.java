@@ -1,11 +1,9 @@
 package edu.st.common.messages.client;
 
 import edu.st.common.messages.Message;
-import edu.st.common.messages.MessageType;
 
 public class JoinGame extends Message {
   public JoinGame(String username, int gameLobbyId) {
-    super(MessageType.JoinGame);
     this.username = username;
     this.gameLobbyId = gameLobbyId;
   }

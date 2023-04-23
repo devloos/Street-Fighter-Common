@@ -1,11 +1,9 @@
 package edu.st.common.messages.client;
 
 import edu.st.common.messages.Message;
-import edu.st.common.messages.MessageType;
 
 public class PlayerInfoConfirmed extends Message {
   public PlayerInfoConfirmed(String username, String avatarSelected) {
-    super(MessageType.PlayerInfoConfirmed);
     this.username = username;
     this.avatarSelected = avatarSelected;
   }

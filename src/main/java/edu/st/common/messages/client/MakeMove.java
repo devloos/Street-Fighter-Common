@@ -1,12 +1,10 @@
 package edu.st.common.messages.client;
 
 import edu.st.common.messages.Message;
-import edu.st.common.messages.MessageType;
 import javafx.util.Pair;
 
 public class MakeMove extends Message {
   public MakeMove(int row, int col) {
-    super(MessageType.MakeMove);
     tile = new Pair<Integer, Integer>(row, col);
   }
 
