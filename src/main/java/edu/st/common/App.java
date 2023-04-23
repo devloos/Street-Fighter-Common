@@ -1,7 +1,6 @@
 package edu.st.common;
 
 import edu.st.common.messages.Message;
-import edu.st.common.messages.MessageType;
 
 /**
  * Hello world!
@@ -9,7 +8,6 @@ import edu.st.common.messages.MessageType;
  */
 public class App {
     public static void main(String[] args) {
-        Message message = new Message(MessageType.AvatarSelectionStarted);
         System.out.println("Hello World!");
     }
 }

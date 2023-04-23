@@ -3,11 +3,9 @@ package edu.st.common.messages.server;
 import java.util.ArrayList;
 
 import edu.st.common.messages.Message;
-import edu.st.common.messages.MessageType;
 
 public class GameList extends Message {
   public GameList(ArrayList<Integer> lobbyIds) {
-    super(MessageType.GameList);
     this.lobbyIds = lobbyIds;
   }
 

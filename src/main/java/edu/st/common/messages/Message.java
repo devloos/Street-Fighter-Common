@@ -2,18 +2,15 @@ package edu.st.common.messages;
 
 import java.io.Serializable;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Message implements Serializable {
-  public Message(MessageType type) {
-    this.type = type;
-  }
-
-  public MessageType getType() {
-    return type;
-  }
-
-  public void setType(MessageType type) {
-    this.type = type;
-  }
-
-  private MessageType type = null;
+  private String type = this.getClass().getName();
 }

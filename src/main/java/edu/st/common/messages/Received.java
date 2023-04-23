@@ -2,7 +2,6 @@ package edu.st.common.messages;
 
 public class Received extends Message {
   public Received(boolean success) {
-    super(MessageType.Received);
     this.success = success;
   }
 

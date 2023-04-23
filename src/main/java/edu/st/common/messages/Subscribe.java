@@ -1,4 +1,4 @@
-package edu.st.common.test;
+package edu.st.common.messages;
 
 import java.util.ArrayList;
 

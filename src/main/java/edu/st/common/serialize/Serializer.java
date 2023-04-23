@@ -7,8 +7,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.jsontype.PolymorphicTypeValidator;
 
-import edu.st.common.test.Message;
-import edu.st.common.test.Packet;
+import edu.st.common.messages.Message;
+import edu.st.common.messages.Packet;
 
 public class Serializer<T extends Message> {
 
