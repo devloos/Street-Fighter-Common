@@ -1,16 +1,16 @@
-package edu.st.common.messages.client;
+package edu.st.common.models;
 
-import edu.st.common.messages.Message;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-public class CreateGame extends Message {
-  private String username = null;
+public class Game {
   private String gameId = null;
+  private String hostname = null;
+  private String playername = null;
 }
