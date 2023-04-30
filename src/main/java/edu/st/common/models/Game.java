@@ -1,5 +1,7 @@
 package edu.st.common.models;
 
+import java.util.UUID;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,7 +12,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Game {
-  private String gameId = null;
+  private UUID gameId = null;
+  private String gamename = null;
   private String hostname = null;
   private String playername = null;
 }

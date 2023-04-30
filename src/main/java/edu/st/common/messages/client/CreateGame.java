@@ -12,5 +12,5 @@ import lombok.Setter;
 @Setter
 public class CreateGame extends Message {
   private String username = null;
-  private String gameId = null;
+  private String gamename = null;
 }

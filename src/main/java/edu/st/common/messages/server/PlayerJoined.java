@@ -1,19 +1,15 @@
 package edu.st.common.messages.server;
 
 import edu.st.common.messages.Message;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class PlayerJoined extends Message {
-  public PlayerJoined(String username) {
-    this.username = username;
-  }
-
-  public String getUsername() {
-    return username;
-  }
-
-  public void setUsername(String username) {
-    this.username = username;
-  }
-
   private String username = null;
 }
