@@ -1,15 +1,18 @@
-package edu.st.common.messages.client;
+package edu.st.common.models;
 
-import edu.st.common.messages.Message;
+import java.io.Serializable;
+import java.util.UUID;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
-public class CreateGame extends Message {
+public class GamePair implements Serializable {
+  private UUID gameId = null;
   private String hostname = null;
 }
