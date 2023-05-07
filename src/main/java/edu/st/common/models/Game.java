@@ -64,5 +64,6 @@ public class Game {
   private String playername = null;
   private Socket playerSocket = null;
   private Token currentPlayer = Token.X;
+  private boolean live = false;
   private ArrayList<ArrayList<Token>> board = null;
 }

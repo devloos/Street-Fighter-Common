@@ -13,4 +13,6 @@ import lombok.Setter;
 @Setter
 public class GameEnded extends Message {
   private GameResult result = null;
+  private Integer row = null;
+  private Integer col = null;
 }
