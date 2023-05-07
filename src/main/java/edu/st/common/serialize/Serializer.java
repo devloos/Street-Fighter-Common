@@ -28,7 +28,7 @@ public class Serializer<T extends Message> {
         }
     }
 
-    public Packet<T> deserialize(String jsonStr) throws ClassNotFoundException {
+    public Packet<T> deserialize(String jsonStr) {
         try {
             JsonNode parent = mapper.readTree(jsonStr);
             String type = parent.get("message").get("type").asText();
@@ -39,8 +39,11 @@ public class Serializer<T extends Message> {
             return mapper.readValue(jsonStr, javaType);
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
+
+        return null;
     }
 
 }
