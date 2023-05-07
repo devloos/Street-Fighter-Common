@@ -58,6 +58,10 @@ public class Game {
     setCurrentPlayer(Token.X);
   }
 
+  public boolean playAgain() {
+    return hostPlayAgain && playerPlayAgain;
+  }
+
   private UUID gameId = null;
   private String hostname = null;
   private Socket hostSocket = null;
@@ -65,5 +69,7 @@ public class Game {
   private Socket playerSocket = null;
   private Token currentPlayer = Token.X;
   private boolean live = false;
+  private boolean hostPlayAgain = false;
+  private boolean playerPlayAgain = false;
   private ArrayList<ArrayList<Token>> board = null;
 }
