@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public class Game {
+  public Game() {
+  }
+
   public Game(UUID gameId, String hostname, Socket hostSocket, String playername, Socket playerSocket) {
     this.gameId = gameId;
     this.hostname = hostname;
@@ -19,19 +22,6 @@ public class Game {
         board.get(i).add(null);
       }
     }
-  }
-
-  public Game() {
-    this.gameId = null;
-    this.hostname = null;
-    this.hostSocket = null;
-    this.playername = null;
-    this.playerSocket = null;
-    this.currentPlayer = Token.X;
-    this.live = false;
-    this.hostPlayAgain = false;
-    this.playerPlayAgain = false;
-    this.board = null;
   }
 
   public void updateBoard(Integer row, Integer col) {

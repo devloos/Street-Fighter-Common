@@ -6,7 +6,6 @@ public class GameCreated extends Message {
   private int gameLobbyId = 0;
 
   public GameCreated() {
-    this.gameLobbyId = 0;
   }
 
   public GameCreated(int gameLobbyId) {

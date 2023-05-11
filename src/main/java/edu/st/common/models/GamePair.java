@@ -8,8 +8,6 @@ public class GamePair implements Serializable {
   private String hostname = null;
 
   public GamePair() {
-    this.gameId = null;
-    this.hostname = null;
   }
 
   public GamePair(UUID gameId, String hostname) {

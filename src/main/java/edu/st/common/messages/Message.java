@@ -3,10 +3,9 @@ package edu.st.common.messages;
 import java.io.Serializable;
 
 public class Message implements Serializable {
-  private String type;
+  private String type = this.getClass().getName();
 
   public Message() {
-    this.type = this.getClass().getName();
   }
 
   public String getType() {
