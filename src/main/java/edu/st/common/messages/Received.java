@@ -1,14 +1,30 @@
 package edu.st.common.messages;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
 public class Received extends Message {
   private boolean success = false;
+
+  public Received() {
+    super();
+    this.success = false;
+  }
+
+  public Received(boolean success) {
+    super();
+    this.success = success;
+  }
+
+  public boolean isSuccess() {
+    return success;
+  }
+
+  public void setSuccess(boolean success) {
+    this.success = success;
+  }
+
+  @Override
+  public String toString() {
+    return "Received{" +
+        "success=" + success +
+        '}';
+  }
 }
