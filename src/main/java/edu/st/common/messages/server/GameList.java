@@ -4,15 +4,22 @@ import java.util.ArrayList;
 
 import edu.st.common.messages.Message;
 import edu.st.common.models.GamePair;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
 public class GameList extends Message {
   private ArrayList<GamePair> games = null;
+
+  public GameList() {
+  }
+
+  public GameList(ArrayList<GamePair> games) {
+    this.games = games;
+  }
+
+  public ArrayList<GamePair> getGames() {
+    return games;
+  }
+
+  public void setGames(ArrayList<GamePair> games) {
+    this.games = games;
+  }
 }
