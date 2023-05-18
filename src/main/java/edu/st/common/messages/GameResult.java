@@ -1,7 +1,7 @@
 package edu.st.common.messages;
 
 public enum GameResult {
-  Winner,
-  Loser,
+  Host,
+  Player,
   Tie
 }
