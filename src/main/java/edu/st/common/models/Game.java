@@ -53,6 +53,8 @@ public class Game {
       }
     }
 
+    hostPlayAgain = false;
+    playerPlayAgain = false;
     // Player one starts again
     setCurrentPlayer(Token.X);
   }
