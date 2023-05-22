@@ -5,6 +5,11 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public class Game {
+  public boolean hostReady = false;
+  public boolean playerReady = false;
+  public boolean hostPlayAgain = false;
+  public boolean playerPlayAgain = false;
+
   public Game() {
   }
 
@@ -114,28 +119,16 @@ public class Game {
     this.live = live;
   }
 
-  public boolean isHostPlayAgain() {
-    return hostPlayAgain;
-  }
-
-  public void setHostPlayAgain(boolean hostPlayAgain) {
-    this.hostPlayAgain = hostPlayAgain;
-  }
-
-  public boolean isPlayerPlayAgain() {
-    return playerPlayAgain;
-  }
-
-  public void setPlayerPlayAgain(boolean playerPlayAgain) {
-    this.playerPlayAgain = playerPlayAgain;
-  }
-
   public ArrayList<ArrayList<Token>> getBoard() {
     return board;
   }
 
   public void setBoard(ArrayList<ArrayList<Token>> board) {
     this.board = board;
+  }
+
+  public boolean bothPlayersReady() {
+    return hostReady && playerReady;
   }
 
   private UUID gameId = null;
@@ -145,7 +138,5 @@ public class Game {
   private Socket playerSocket = null;
   private Token currentPlayer = Token.X;
   private boolean live = false;
-  private boolean hostPlayAgain = false;
-  private boolean playerPlayAgain = false;
   private ArrayList<ArrayList<Token>> board = null;
 }
