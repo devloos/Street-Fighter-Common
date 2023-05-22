@@ -2,13 +2,13 @@ package edu.st.common.messages.client;
 
 import edu.st.common.messages.Message;
 
-public class PlayerInfoChanged extends Message {
+public class PlayerAvatarChange extends Message {
   private String avatarSelected = null;
 
-  public PlayerInfoChanged() {
+  public PlayerAvatarChange() {
   }
 
-  public PlayerInfoChanged(String avatarSelected) {
+  public PlayerAvatarChange(String avatarSelected) {
     this.avatarSelected = avatarSelected;
   }
 

@@ -24,15 +24,13 @@ public class Game {
     }
   }
 
-  public void updateBoard(Integer row, Integer col) {
+  public void updateCurrentPlayer() {
     switch (currentPlayer) {
       case X: {
-        board.get(row).set(col, currentPlayer);
         setCurrentPlayer(Token.Y);
         break;
       }
       case Y: {
-        board.get(row).set(col, currentPlayer);
         setCurrentPlayer(Token.X);
         break;
       }
